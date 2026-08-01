@@ -1,7 +1,28 @@
-const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, ActionRowBuilder, StringSelectMenuBuilder, UserSelectMenuBuilder, RoleSelectMenuBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require('discord.js');
+const { 
+  Client, 
+  GatewayIntentBits, 
+  REST, 
+  Routes, 
+  SlashCommandBuilder, 
+  ActionRowBuilder, 
+  StringSelectMenuBuilder, 
+  UserSelectMenuBuilder, 
+  RoleSelectMenuBuilder, 
+  ButtonBuilder, 
+  ButtonStyle, 
+  EmbedBuilder 
+} = require('discord.js');
+
+const client = new Client({ 
+  intents: [
+    GatewayIntentBits.Guilds, 
+    GatewayIntentBits.GuildMessages, 
+    GatewayIntentBits.MessageContent 
+  ] 
+});
 
 // --- CONFIGURATION ---
-const TOKEN = "";
+const TOKEN = "MTUzMzEyMTQ1OTY4MDE4NjQwOA.Gm_7Rt.NfECqdPRwx3Fu8r6v2BMO4mT6349qunRjKDeRE";
 const CLIENT_ID = "1533121459680186408";
 
 // Replace these with your actual Discord Role IDs
