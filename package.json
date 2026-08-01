@@ -1,0 +1,9 @@
+{
+  "name": "role-bot",
+  "version": "1.0.0",
+  "description": "Advanced Role Management Bot",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
